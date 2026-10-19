@@ -40,6 +40,13 @@ h3{
 .skip:focus {
     top: 1rem;
     left: 1rem;
+    outline-offset: 0;
+}
+
+:focus {
+    outline: 0.2rem solid #9a3324;
+    outline-offset: 0.1rem;
+    border-radius: 10px;
 }
 
 img.logo {
