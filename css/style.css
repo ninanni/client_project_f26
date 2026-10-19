@@ -207,7 +207,7 @@ section p {
 }
 
 #main {
-    padding: 1.5rem 1rem 0.25rem 1rem;
+    padding: 1.5rem 1rem 0.5rem 1rem;
     background-color: #EDF6FF;
     border-bottom: 0.3rem solid #FFCB05;
 }
@@ -272,6 +272,7 @@ aside {
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     background-color: #FFF9E6;
+    margin-bottom: 1rem;
 }
 
 aside h2 {
