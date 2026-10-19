@@ -348,6 +348,11 @@ ol strong {
     display: block;
 }
 
+.phase_guiding {
+    list-style: none;
+    padding-left: 0;
+}
+
 .phase_guiding li{
     border: 0.1rem solid #00274C;
     border-radius: 10px;
