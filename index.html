@@ -3,19 +3,21 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/html5reset.css">
+      <link rel="stylesheet" href="css/style.css">
       <title>Engaged Learning Resources | UMSI</title>
   </head>
 
   <body>
     <header>
-      <a href = "#main">Skip to Main Content</a>
-      <img src="images/UMSI_header_logo.png" alt="UMSI Logo">
+      <a class="skip" href = "#main">Skip to Main Content</a>
+      <img class="logo" src="images/UMSI_header_logo.png" alt="UMSI Logo">
       <nav>
         <ul>
-          <li><a href = "index.html">Home</a></li>
-          <li><a href = "starting.html">Preparing and Starting Your Experience</a></li>
-          <li><a href = "during.html">During Your Experience</a></li>
-          <li><a href= "ending.html">Ending Your Experience</a></li>
+          <li class="active"><a href = "index.html">Home</a></li>
+          <li><a href = "starting.html">Start</a></li>
+          <li><a href = "during.html">During</a></li>
+          <li><a href= "ending.html">Ending</a></li>
         </ul>
       </nav>
       <h1>Welcome to the UMSI Engaged Learning Office</h1>
@@ -33,7 +35,7 @@
         <h2>Why Use This Resource?</h2>
         <p>Real-world projects rarely follow a perfect plan. This site helps you find the right guidance when you need it, so you can spend less time searching for materials and more time learning, collaborating, and moving your project forward.</p>
         <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the University Campus.">
-        <ul>
+        <ul class="list_container">
           <li><strong>Follow a clear process:</strong> Move from preparation and project launch through active work, reflection, and responsible closeout.</li>
           <li><strong>Find practical support:</strong> Access relevant templates, checklists, examples, and how-to guidance for common project needs.</li>
           <li><strong>Build professional skills:</strong> Strengthen your communication, teamwork, project management, and ethical decision-making.</li>
@@ -41,7 +43,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="guidance">
         <h2>Guidance for Every Stage</h2>
         <p>Engaged learning projects can change as new needs, constraints, and insights emerge. Find guidance for the stage of work you are navigating <strong>now.</strong></p>
         <article>
@@ -65,30 +67,32 @@
         <h2>Featured Programs</h2>
         <p>Explore opportunities to collaborate with organizations, communities, student teams, and partners in Michigan and beyond.</p>
         <img src="images/UMSI_alt_fallbreak_fieldmuseum.jpeg" alt="Students in Chicago at the Field Museum for alternative spring break">
-        <article>
-          <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=12810">AI Clinic Project Experience</a></h3>
-          <p>Work with a team on an applied artificial intelligence project for a partner organization.</p>
-        </article>
-        <article>
-          <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=12556">A2 Data Dive</a></h3>
-          <p>Use information and data skills to help address challenges identified by community organizations.</p>
-        </article>
-        <article>
-          <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=11297">Alternative Fall Break</a></h3>
-          <p>Participate in a community-engaged learning experience during the University’s fall break.</p>
-        </article>
-        <article>
-          <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=10621">Alternative Spring Break (ASB)</a></h3>
-          <p>Collaborate with communities and nonprofit organizations on information-related projects during spring break.</p>
-        </article>
-        <article>
-          <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=12294">Student Organization Engaged Learning Leaders</a></h3>
-          <p>Develop leadership and project-management skills while supporting engaged learning through a UMSI student organization.</p>
-        </article>
-        <article>
-          <h3><a href="https://www.si.umich.edu/student-life/study-abroad">Study Abroad</a></h3>
-          <p>Build intercultural awareness and apply your learning in an international setting. </p>
-        </article>
+        <div class="featured_programs">
+          <article>
+            <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=12810">AI Clinic Project Experience</a></h3>
+            <p>Work with a team on an applied artificial intelligence project for a partner organization.</p>
+          </article>
+          <article>
+            <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=12556">A2 Data Dive</a></h3>
+            <p>Use information and data skills to help address challenges identified by community organizations.</p>
+          </article>
+          <article>
+            <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=11297">Alternative Fall Break</a></h3>
+            <p>Participate in a community-engaged learning experience during the University’s fall break.</p>
+          </article>
+          <article>
+            <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=10621">Alternative Spring Break (ASB)</a></h3>
+            <p>Collaborate with communities and nonprofit organizations on information-related projects during spring break.</p>
+          </article>
+          <article>
+            <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=12294">Student Organization Engaged Learning Leaders</a></h3>
+            <p>Develop leadership and project-management skills while supporting engaged learning through a UMSI student organization.</p>
+          </article>
+          <article>
+            <h3><a href="https://www.si.umich.edu/student-life/study-abroad">Study Abroad</a></h3>
+            <p>Build intercultural awareness and apply your learning in an international setting. </p>
+          </article>
+        </div>
       </section>
 
       <section>
@@ -112,7 +116,7 @@
     </main>
     
     <footer>
-      <img src="images/UMSI_footer_logo.png" alt="UMSI Logo in square format">
+      <img class="logo" src="images/UMSI_footer_logo.png" alt="UMSI Logo in square format">
       <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>

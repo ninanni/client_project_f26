@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>During Your Experience | UMSI</title>
   </head>
 
   <body>
     <header>
-      <a href = "#main">Skip to Main Content</a>
-      <img src="images/UMSI_header_logo.png" alt="UMSI Logo">
+      <a class="skip" href = "#main">Skip to Main Content</a>
+      <img class="logo" src="images/UMSI_header_logo.png" alt="UMSI Logo">
       <nav>
         <ul>
           <li><a href = "index.html">Home</a></li>
-          <li><a href = "starting.html">Preparing and Starting Your Experience</a></li>
-          <li><a href = "during.html">During Your Experience</a></li>
-          <li><a href= "ending.html">Ending Your Experience</a></li>
+          <li><a href = "starting.html">Start</a></li>
+          <li class="active"><a href = "during.html">During</a></li>
+          <li><a href= "ending.html">Ending</a></li>
         </ul>
       </nav>
       <h1>During Your Experience</h1>
@@ -33,11 +35,11 @@
         <p>The true value of this phase lies in developing <strong>resilience, adaptability, and ethical agility</strong>. Learning to manage "scope creep," navigate mid-project feedback, and re-align technical decisions with human needs are the exact experiences that distinguish top UMSI graduates. When you view friction not as a barrier, but as a natural part of the applied learning process, you develop the strategic problem-solving skills needed in modern information careers.</p>
       </section>
 
-      <section>
+      <section class="phase">
         <h2>Phase 3: Managing and Executing in the Field</h2>
         <p>During your experience, you will conduct research, track progress, and maintain clear communication with project sponsors.</p>
         <img src="images/UMSI_communication_during.jpg" alt="UMSI students in Detroit working on one laptop together">
-        <article>
+        <article class="phase_guiding">
           <h3>Guiding Principles During Your Experience</h3>
           <ul>
             <li><strong>Fieldwork & Research Methods:</strong> Apply human-centered design tools to observe contexts and extract insights.</li>
@@ -102,7 +104,7 @@
     </main>
 
     <footer> <!-- Taken from index.html and slightly modified-->
-      <img src="images/UMSI_footer_logo.png" alt="UMSI Logo in square format">
+      <img class="logo" src="images/UMSI_footer_logo.png" alt="UMSI Logo in square format">
       <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
