@@ -348,7 +348,7 @@ ol strong {
     display: block;
 }
 
-.phase_guiding {
+.phase_guiding ul {
     list-style: none;
     padding-left: 0;
 }
