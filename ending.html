@@ -88,6 +88,31 @@
           </ul>
         </article>
       </section>
+
+      <section>
+        <h2>Your Space to Reflect</h2>
+        <p>Congratulations on finishing your engaged learning experience journey! Here is your space to reflect on it by writing down the most important skills you gained and things you want to remember.</p>
+        <label for="reflection">Your Reflection</label>
+        <textarea id="reflection" placeholder="Write your reflection here..."></textarea>
+        <div class="reflection_buttons">
+          <button type="button" onclick="saveReflection()">Save</button>
+          <button type="button" onclick="clearReflection()">Clear</button>
+        </div>
+        <script>
+          const reflection_text = document.getElementById("reflection");
+          reflection_text.value = localStorage.getItem("refl") || "";
+
+          function saveReflection() {
+            localStorage.setItem("refl", reflection_text.value);
+            alert("Reflection Saved!");
+          }
+          function clearReflection() {
+            reflection_text.value ="";
+            localStorage.removeItem("refl")
+            alert("Reflection Cleared!");
+          }
+        </script>
+      </section>
     </main>
 
     <footer> <!-- Taken from index.html and slightly modified-->

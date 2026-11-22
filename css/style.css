@@ -417,7 +417,7 @@ td:nth-child(1) {
     background-color: #FFF9E6;
 }
 
-caption {
+caption, label {
     position: absolute;
     top: -100px;
 }
@@ -473,6 +473,34 @@ footer a:hover, section p a:hover {
 .reference_button a:hover {
     color: #FFCB05;
     text-decoration: underline;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    height: 12rem;
+    margin-bottom: 0.25rem;
+    border: 0.1rem solid #00274C;
+    border-radius: 10px;
+    font: inherit;
+    padding: 0.5rem;
+}
+
+button {
+    background-color: #00274C;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font: inherit;
+    border-radius: 10px;
+    border: none;
+}
+button:hover {
+    color:#FFCB05;
+    text-decoration: underline;
+}
+.reflection_buttons {
+    margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 480px) {
