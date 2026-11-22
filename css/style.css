@@ -139,8 +139,8 @@ section p {
 
 .list_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0.5rem;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    gap: 1rem;
     list-style: none;
     margin-bottom: 1rem;
 }
@@ -151,30 +151,23 @@ section p {
 }
 
 .list_container li {
-    border: 0.1rem solid #FFCB05;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-top: 0.3rem solid #FFCB05;
     border-radius: 10px;
     padding: 0.5rem;
     background-color: #FFF9E6;
 }
 
-.list_container li:nth-child(1) {
-    grid-column: 1 / span 2;
-    grid-row: 1 /span 2;
+.list_container li:hover {
+    transform: scale(1.01);
 }
 
-.list_container li:nth-child(2) {
-    grid-column: 3 / span 2;
-    grid-row: 1 /span 2;
+.list_container li:nth-child(odd) {
+    grid-column: 1 / span 3;
 }
 
-.list_container li:nth-child(3) {
-    grid-column: 1 / span 2;
-    grid-row: 3 /span 2;
-}
-
-.list_container li:nth-child(4) {
-    grid-column: 3 / span 2;
-    grid-row: 3 /span 2;
+.list_container li:nth-child(even) {
+    grid-column: 2 / span 3;
 }
 
 .guidance article {
@@ -210,9 +203,12 @@ section p {
 
 .guidance a {
     text-decoration-color: #00274C;
-    text-decoration-thickness: 0.15rem;
+    text-decoration-thickness: 0.1rem;
     font-weight: bold;
     color:#00274C;
+}
+.guidance a:hover {
+    text-decoration-thickness: 0.15rem;
 }
 
 #main {
@@ -223,46 +219,37 @@ section p {
 
 .featured_programs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0.5rem;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.featured_programs article:nth-child(1) {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+.featured_programs article:nth-child(odd) {
+    grid-column: 1 / span 3;
 }
-.featured_programs article:nth-child(2){
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 2;
-}
-.featured_programs article:nth-child(3) {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 2;
-}
-.featured_programs article:nth-child(4){
-    grid-column: 3 / span 2;
-    grid-row: 3 / span 2;
-}
-.featured_programs article:nth-child(5) {
-    grid-column: 1 / span 2;
-    grid-row: 5 / span 2;
-}
-.featured_programs article:nth-child(6){
-    grid-column: 3 / span 2;
-    grid-row: 5 / span 2;
+.featured_programs article:nth-child(even){
+    grid-column: 2 / span 3;
 }
 
 .featured_programs article {
-    border: 0.1rem solid #FFCB05;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-top: 0.3rem solid #FFCB05;
     background-color: #FFF9E6;
     border-radius: 10px;
     padding: 0.5rem;
 }
 
+/*.featured_programs article:hover {
+    transform: scale(1.01);
+}*/
+
 .featured_programs article a {
     color:#00274C;
     font-weight: bold;
+    text-decoration-thickness: 0.1rem;
+}
+
+.featured_programs article a:hover {
     text-decoration-thickness: 0.15rem;
 }
 
@@ -289,17 +276,19 @@ aside h2 {
 }
 
 aside div a {
+    display: block;
     text-decoration: none;
     color: #FFF;
-}
-
-aside div {
     margin: 1rem 0;
     padding: 1rem;
     background-color: #00274C;
     border: 0.1rem solid #00274C;
     border-radius: 10px;
     text-align: center;
+}
+
+aside div a:hover {
+    color: #FFCB05;
 }
 
 aside p:nth-of-type(2) {
@@ -309,8 +298,12 @@ aside p:nth-of-type(2) {
 
 aside p a {
     color: #00274C;
-    text-decoration-thickness: 0.15rem;
+    text-decoration-thickness: 0.1rem;
     font-weight: bold;
+}
+
+aside p a:hover {
+    text-decoration-thickness: 0.15rem;
 }
 
 .unordered_list li {
@@ -334,8 +327,12 @@ aside p a {
 
 .unordered_list a {
     color:#00274C;
-    text-decoration-thickness: 0.15rem;
+    text-decoration-thickness: 0.1rem;
     font-weight: bold;
+}
+
+.unordered_list a:hover {
+    text-decoration-thickness: 0.15rem;
 }
 
 ol {
@@ -441,8 +438,122 @@ footer p, footer address {
     grid-column: 1 / -1;
 }
 
-footer a {
+footer a, section p a {
     color: #00274C;
     font-weight: bold;
+    text-decoration-thickness: 0.1rem;
+}
+footer a:hover, section p a:hover {
     text-decoration-thickness: 0.15rem;
+}
+
+section p a {
+    font-style: italic;
+}
+
+.button404 {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.button404 a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #00274C;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button404 a:hover {
+    color: #FFCB05;
+}
+
+@media screen and (min-width: 480px) {
+    header img.logo {
+        width: 75%;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header img.logo {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding: 0 0.75rem;
+        align-self: center;
+    }
+    h1 {
+        grid-column: 1 / -1;
+    }
+    nav ul {
+        height: 100%;
+    }
+    nav li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        grid-template-columns: 1fr 3fr;
+        justify-items: start;
+        align-items: center;
+        column-gap: 2rem;
+        row-gap: 0;
+        text-align: start;
+    }
+    footer img {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 3;
+    }
+    footer p, footer address {
+        grid-column: 2 / -1;
+    }   
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        grid-template-columns: 3fr 4fr;
+    }
+    header img.logo {
+        padding: 0 1rem;
+    }
+    nav li a {
+        font-size: 110%;
+    }
+
+    footer {
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+        justify-items: center;
+        text-align: center;
+    }
+    footer img {
+        grid-column: 1 / span 1;
+    }
+    footer p:first-of-type{
+        grid-column: 2 / span 1;
+    }
+    footer address {
+        grid-column: 3 / span 1;
+    }
+    footer p:last-of-type {
+        grid-column: 4 / span 1;
+    } 
+    footer img, footer p, footer address {
+        grid-row: 1;
+    }
 }
