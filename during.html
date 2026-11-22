@@ -31,6 +31,9 @@
       <section>
         <h2>Navigating Your Active Project</h2>
         <p>Master the art of adaptive project management, human-centered fieldwork, and constructive feedback as you execute your project in real time.</p>
+        <div class="reference_button">
+          <a href="#phase3">Phase 3: During your Experience &#x2192</a>
+        </div>
       </section>
 
       <section>
@@ -39,7 +42,7 @@
         <p>The true value of this phase lies in developing <strong>resilience, adaptability, and ethical agility</strong>. Learning to manage "scope creep," navigate mid-project feedback, and re-align technical decisions with human needs are the exact experiences that distinguish top UMSI graduates. When you view friction not as a barrier, but as a natural part of the applied learning process, you develop the strategic problem-solving skills needed in modern information careers.</p>
       </section>
 
-      <section class="phase">
+      <section class="phase" id="phase3">
         <h2>Phase 3: Managing and Executing in the Field</h2>
         <p>During your experience, you will conduct research, track progress, and maintain clear communication with project sponsors.</p>
         <img src="images/UMSI_communication_during.jpg" alt="UMSI students in Detroit working on one laptop together">
@@ -113,7 +116,10 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; Copyright 2026 Regents of the University of Michigan</p>
+      <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
     </footer>
 
   </body>

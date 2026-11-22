@@ -31,6 +31,10 @@
       <section>
         <h2>Launch Your Engaged Learning Journey</h2>
         <p>Transform your academic knowledge into real-world impact. Use this guide to understand your project context, evaluate team readiness, establish expectations, and begin a productive partnership.</p>
+        <div class="reference_button">
+          <a href="#phase1">Phase 1: Preparing your Experience &#x2192</a>
+          <a href="#phase2">Phase 2: Starting your Experience &#x2192</a>
+        </div>
       </section>
 
       <section>
@@ -39,7 +43,7 @@
         <p>The initial phase of a project is rarely about jumping straight into execution—<strong>it is about building the foundation for ethical, sustainable engagement</strong>. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
       </section>
 
-      <section class="phase">
+      <section class="phase" id="phase1">
         <h2>Phase 1: Preparing for the Experience</h2>
         <p>Before creating a solution, take time to understand the context, evaluate your team's readiness, and identify what you still need to learn.</p>
         <img src="images/UMSI_focused_work_alone.jpg" alt="A student in a white sweatshirt sits at a table in the Law Library and works on their laptop.">
@@ -98,7 +102,7 @@
         </article>
       </section>
 
-      <section class="phase">
+      <section class="phase" id="phase2">
         <h2>Phase 2: Starting Your Experience</h2>
         <p>When starting your experience, it is important to establish professional communication, conduct initial meetings, and finalizing partnership agreements.</p>
         <img src="images/UMSI_collab_starting.jpg" alt="Students work together and chat in the UMSI Central student lounge.">
@@ -138,7 +142,10 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; Copyright 2026 Regents of the University of Michigan</p>
+      <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
     </footer>
 
   </body>

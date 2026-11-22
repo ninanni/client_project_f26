@@ -34,8 +34,8 @@ permalink: /404.html
       <section>
         <h2>Let's get You back on Track!</h2>
         <p>The page you are looking for has been moved or never existed. But there is still plenty to discover:</p>
-        <div class="button404">
-          <a href="index.html">Go to Homepage &#x2192</a>
+        <div class="reference_button">
+          <a href="index.html">Homepage &#x2192</a>
           <a href="#overview">Stages of Your Experience &#x2192</a>
         </div>
         <img src="images/404_image.png" alt="A squirrel and a turkey in front of a signpost, wondering where to go.">
@@ -63,7 +63,7 @@ permalink: /404.html
 
       <section>
         <h2>Do You need further Assistance?</h2>
-        <p>If you think this page should exist or if you have any further questions, email the ELO at <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a></p>
+        <p>If you think this page should exist or if you have any further questions, email the ELO at <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>.</p>
       </section>
     </main>
 
@@ -73,7 +73,10 @@ permalink: /404.html
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; Copyright 2026 Regents of the University of Michigan</p>
+      <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
     </footer>
 
   </body>

@@ -289,6 +289,7 @@ aside div a {
 
 aside div a:hover {
     color: #FFCB05;
+    text-decoration: underline;
 }
 
 aside p:nth-of-type(2) {
@@ -447,18 +448,14 @@ footer a:hover, section p a:hover {
     text-decoration-thickness: 0.15rem;
 }
 
-section p a {
-    font-style: italic;
-}
-
-.button404 {
+.reference_button {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
 }
 
-.button404 a {
+.reference_button a {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -473,8 +470,9 @@ section p a {
     text-align: center;
 }
 
-.button404 a:hover {
+.reference_button a:hover {
     color: #FFCB05;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 480px) {
